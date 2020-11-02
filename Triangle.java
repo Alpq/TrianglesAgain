@@ -5,27 +5,19 @@ public class Triangle{
   public Triangle(Point a, Point b, Point c)
   {
     {
-      v1 = new Point(a);
-      v2 = new Point(b);
-      v3 = new Point(c);
-      // This method avoids degenerate cases.
-      //String t1 = new Point(a);
-      //String t2 = new Point(b);
-      //String t3 = new Point(c);
-      //if (!((t1.equals(t2) || t2.equals(t3)) || t3.equals(t1))){v1 = t1;v2 = t2;v3 = t3;}
+      Point t1 = a;
+      Point t2 = b;
+      Point t3 = c;
+      if (!((t1.equals(t2) || t2.equals(t3)) || t3.equals(t1))){v1 = t1;v2 = t2;v3 = t3;}
     }
   }
   public Triangle(double x1, double y1, double x2, double y2, double x3, double y3)
   {
     {
-      v1 = new Point(x1, y1);
-      v2 = new Point(x2, y2);
-      v3 = new Point(x3, y3);
-      // This method avoids degenerate cases.
-      //String t1 = new Point(x1, y1);
-      //String t2 = new Point(x2, y2);
-      //String t3 = new Point(x3, y3);
-      //if (!((t1.equals(t2) || t2.equals(t3)) || t3.equals(t1))){v1 = t1;v2 = t2;v3 = t3;}
+      Point t1 = new Point(x1, y1);
+      Point t2 = new Point(x2, y2);
+      Point t3 = new Point(x3, y3);
+      if (!((t1.equals(t2) || t2.equals(t3)) || t3.equals(t1))){v1 = t1;v2 = t2;v3 = t3;}
 
     }
   }
