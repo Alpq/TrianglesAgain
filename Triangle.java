@@ -61,4 +61,10 @@ public class Triangle{
     String y3 = String.valueOf(this.v3.getY());
     return "v1(" + x1 + ", " + y1 + ") v2(" + x2 + ", " + y2 + ") v3(" + x3 + ", " + y3 + ")";
   }
+  public void setVertex(int index, Point newP)
+  {
+    if (index == 1) {this.v1.setPointCoords(newP.getX(), newP.getY());}
+    if (index == 2) {this.v2.setPointCoords(newP.getX(), newP.getY());}
+    if (index == 3) {this.v3.setPointCoords(newP.getX(), newP.getY());}
+  }
 }
