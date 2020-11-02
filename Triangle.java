@@ -1,17 +1,33 @@
+// Thank you to Christopher Liu and Steven Lei for helping with Test Cases.
 public class Triangle{
   private Point v1, v2, v3;
 
   public Triangle(Point a, Point b, Point c)
   {
-    this.v1.setPointCoords(a.getX(), a.getY());
-    this.v2.setPointCoords(a.getX(), a.getY());
-    this.v2.setPointCoords(a.getX(), a.getY());
+    {
+      v1 = new Point(a);
+      v2 = new Point(b);
+      v3 = new Point(c);
+      // This method avoids degenerate cases.
+      //String t1 = new Point(a);
+      //String t2 = new Point(b);
+      //String t3 = new Point(c);
+      //if (!((t1.equals(t2) || t2.equals(t3)) || t3.equals(t1))){v1 = t1;v2 = t2;v3 = t3;}
+    }
   }
-  public Triangle(double x1, double y1,double x2, double y2,double x3, double y3)
+  public Triangle(double x1, double y1, double x2, double y2, double x3, double y3)
   {
-    this.v1.setPointCoords(x1, y1);
-    this.v2.setPointCoords(x2, y2);
-    this.v3.setPointCoords(x3, y3);
+    {
+      v1 = new Point(x1, y1);
+      v2 = new Point(x2, y2);
+      v3 = new Point(x3, y3);
+      // This method avoids degenerate cases.
+      //String t1 = new Point(x1, y1);
+      //String t2 = new Point(x2, y2);
+      //String t3 = new Point(x3, y3);
+      //if (!((t1.equals(t2) || t2.equals(t3)) || t3.equals(t1))){v1 = t1;v2 = t2;v3 = t3;}
+
+    }
   }
   public double getPerimeter() //Return the perimeter without any rounding.
   {

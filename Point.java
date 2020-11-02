@@ -1,3 +1,4 @@
+// Thank you to Christopher Liu and Steven Lei for helping with Test Cases.
 public class Point{
     private double x,y;
 
