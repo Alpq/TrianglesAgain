@@ -5,20 +5,17 @@ public class Triangle{
   public Triangle(Point a, Point b, Point c)
   {
     {
-      Point t1 = a;
-      Point t2 = b;
-      Point t3 = c;
-      if (!((t1.equals(t2) || t2.equals(t3)) || t3.equals(t1))){v1 = t1;v2 = t2;v3 = t3;}
+      v1 = a;
+      v2 = b;
+      v3 = c;
     }
   }
   public Triangle(double x1, double y1, double x2, double y2, double x3, double y3)
   {
     {
-      Point t1 = new Point(x1, y1);
-      Point t2 = new Point(x2, y2);
-      Point t3 = new Point(x3, y3);
-      if (!((t1.equals(t2) || t2.equals(t3)) || t3.equals(t1))){v1 = t1;v2 = t2;v3 = t3;}
-
+      v1 = new Point(x1, y1);
+      v2 = new Point(x2, y2);
+      v3 = new Point(x3, y3);
     }
   }
   public double getPerimeter() //Return the perimeter without any rounding.
